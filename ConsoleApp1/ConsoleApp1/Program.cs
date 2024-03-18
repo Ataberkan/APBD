@@ -10,12 +10,12 @@ public static double CalculateAverage(int[] numbers)
     if (numbers == null || numbers.Length == 0)
         throw new ArgumentException("Array cannot be null or empty.", nameof(numbers));
     
-    double sum = 0;
+    double TotalSum = 0;
     foreach (int num in numbers)
     {
-        sum += num;
+        TotalSum += num;
     }
-    return sum / numbers.Length;
+    return TotalSum / numbers.Length;
 }
 
 public static int FindMaximum(int[] numbers)
